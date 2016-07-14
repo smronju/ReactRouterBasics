@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Layout from './Layout';
 import Counter from './Children';
+import { Router, Route, hashHistory } from 'react-router'
 
 // If you use React Router, make this component
 // render <Router> with your routes. Currently,
@@ -13,7 +14,9 @@ export default class App extends Component {
     render() {
         return (
             <Layout>
-                <Counter />
+                <Router history={hashHistory}>
+                    <Route path="/" component={Counter}/>
+                </Router>
             </Layout>
         );
     }
