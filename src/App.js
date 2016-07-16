@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Layout from './Layout';
-import Counter from './Children';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 import { Router, Route, hashHistory } from 'react-router'
 
 // If you use React Router, make this component
@@ -15,7 +17,9 @@ export default class App extends Component {
         return (
             <Layout>
                 <Router history={hashHistory}>
-                    <Route path="/" component={Counter}/>
+                    <Route path="/" component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/contact" component={Contact}/>
                 </Router>
             </Layout>
         );

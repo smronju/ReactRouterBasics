@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-export default class Counter extends Component {
+export default class Contact extends Component {
     render() {
         return (
-            <h2>Another component!</h2>
+            <h2>Contact page</h2>
         );
     }
 }
