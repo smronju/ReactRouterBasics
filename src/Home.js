@@ -8,7 +8,12 @@ export default class Home extends Component {
                 <h2>Home page</h2>
 
                 <ul role="nav">
-                    <li><Link to="/about">About</Link></li>
+                    <li>
+                        <Link to="/about">About</Link>
+                        <ul>
+                            <li><Link to="/about/devs">Developers</Link></li>
+                        </ul>
+                    </li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
 

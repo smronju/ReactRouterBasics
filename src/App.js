@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Layout from './Layout';
 import Home from './Home';
-import About from './About';
+import About from './Pages/About';
+import Developers from './Pages/About/Developers';
 import Contact from './Contact';
 import { Router, Route, hashHistory } from 'react-router'
 
@@ -18,7 +19,9 @@ export default class App extends Component {
             <Layout>
                 <Router history={hashHistory}>
                     <Route path="/" component={Home} />
-                    <Route path="/about" component={About} />
+                    <Route path="/about" component={About}>
+                        <Route path="/about/devs" component={Developers} />
+                    </Route>
                     <Route path="/contact" component={Contact} />
                 </Router>
             </Layout>
