@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Layout from './Layout';
-import Home from './Home';
+import Home from './Pages/Home';
 import About from './Pages/About';
 import Developers from './Pages/About/Developers';
-import Contact from './Contact';
+import Contact from './Pages/Contact';
 import { Router, Route, hashHistory } from 'react-router'
 
 // If you use React Router, make this component
