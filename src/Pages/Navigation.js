@@ -8,7 +8,7 @@ const Navigation = (props) => {
             <li>
                 <Link to="/about" activeStyle={{ color: 'red' }}>About</Link>
                 <ul>
-                    <li><Link to="/about/devs" activeStyle={{ color: 'red' }}>Developers</Link></li>
+                    <li><Link to="/about/dev/Ronju" activeStyle={{ color: 'red' }}>Developer</Link></li>
                 </ul>
             </li>
             <li><Link to="/contact" activeStyle={{ color: 'red' }}>Contact</Link></li>

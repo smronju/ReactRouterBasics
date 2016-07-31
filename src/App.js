@@ -20,7 +20,7 @@ export default class App extends Component {
                 <Router history={hashHistory}>
                     <Route path="/" component={Home} />
                     <Route path="/about" component={About}>
-                        <Route path="/about/devs" component={Developers} />
+                        <Route path="/about/dev/:name" component={Developers} />
                     </Route>
                     <Route path="/contact" component={Contact} />
                 </Router>

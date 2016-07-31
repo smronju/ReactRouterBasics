@@ -9,7 +9,7 @@ export default class About extends Component {
             <div>
                 <h2>About page</h2>
                 <Navigation />
-                See <Link to="/about/devs">Developers</Link> list.
+                See <Link to="/about/dev/Ronju">developer</Link> name of this tutorial.
 
                 {this.props.children}
             </div>
